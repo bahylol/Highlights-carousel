@@ -12,7 +12,7 @@
     <div class="container">
         <div class="hero">
             <div class="content">
-                <h1>Coded Summer 2023: The #SuperHuman Edition!</h1>
+                <h1></h1>
                 <p class="date">
                     <span class="calendarIcon">
                         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -23,8 +23,7 @@
                     </span>
                     Jan 15
                 </p>
-                <p>Edge has officially moved its Employee Experience Platform EdgeHub from Dozen V2 to Dozen V3 - the
-                    project started in Q1 this year and included Onboarding activities.</p>
+                <p></p>
                 <button>Button text</button>
             </div>
         </div>
@@ -136,6 +135,10 @@
         document.getElementById('next-button').addEventListener('click', () => {
             currentIndex = (currentIndex + 1) % totalItems;
             document.querySelectorAll('.content-button')[currentIndex].click();
+        });
+
+        window.addEventListener('DOMContentLoaded', () => {
+            document.querySelector('.content-button[data-title="Coded Summer 2023: The #SuperHuman Edition - Unleash Your Coding Powers!"]').click();
         });
     </script>
 </body>
